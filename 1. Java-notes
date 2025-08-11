@@ -1,0 +1,140 @@
+.jar
+.war
+.ear
+
+
+path
+JAVA_HOME
+classpath
+
+class contains
+--------------
+	attributes/class variables/ properties/ data member/ instance variables/
+	constructors
+	static blocks
+	methods/functions/ member function
+
+class Person{
+	String name;
+	short age;
+	String gender;
+	
+	boolean walk(){ .... }
+	boolean sleep() { ....}
+	boolean eat() { .....)
+
+}
+
+// narrative
+
+String, StringBuffer, StringBuilder
+
+
+road map
+--------
+java intro
+programming fundamentals
+oops concept
+abstract classes
+interfaces
+access modifiers
+
+non access modifiers
+generics
+functional interfaces
+lambda expressions
+collections
+streams
+
+project
+
+exception handling
+
+multi threading
+file handling
+
+static vs non-static
+---------------------
+can a static method access static members? - Yes
+can a static method access non-static members? - No
+can a non-static method access static members? - Yes
+can a non-static method access non-static members? - Yes
+
+Room room1;
+
+1. Load the class Room into the memory
+2. Memory for static variable will be created
+3. static blocks will be called automatically
+
+room1 = new Room(200, 100, 50);
+
+4. memory for instance variables will be created
+5. constructor will be called automatically
+
+Room room2 = new Room(250, 150, 50);
+
+6. memory for instance variables will be created
+7. constructor will be called automatically
+
+
+functional interfaces
+---------------------
+	- interface that has only one abstract method
+
+3 ways of implementing functional interface
+-------------------------------------------
+1st way - conventional way -----> can implement any type of interface
+2nd way - anonymous classes -----> can implement any type of interface
+3rd way - lambda expressions ---> can implement only functional interface
+
+Consumer
+Supplier
+Predicate
+Function
+
+
+
+
+
+
+
+
+
+project layout
+---------------
+3 layer project
+
+UI/Presentation layer
+	- responsible for user interaction
+	- for user input and output
+	- user friendly, mitigatable, think from users perspective
+	- for console based appln,we will use Scanner for Input and System.out for output, use main as the presentation layer
+	- for web based appln, we will use HTML forms for input and html for output
+ 
+Service layer
+	- responsible for business logic
+	- receives input from the presentation layer and uses it in the logic
+	- there should be no System.out.println or Scanner statements in this layer
+
+DAO(Data Access Object) / repository layer
+	- responsible for interaction with the data store
+	- since we have not started sql, we will use collection as our data store
+
+POJO(Plain Old Java Object)
+	- these help in transporting data from one layer to another
+	- also known as DTO(Data Transfer Object), VO(Value Object), TO(Transfer objects), BO(Bussiness Objects), model
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
