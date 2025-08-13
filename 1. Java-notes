@@ -113,6 +113,7 @@ UI/Presentation layer
  
 Service layer
 	- responsible for business logic
+	- interacts with the dao layer
 	- receives input from the presentation layer and uses it in the logic
 	- there should be no System.out.println or Scanner statements in this layer
 
@@ -126,15 +127,36 @@ POJO(Plain Old Java Object)
 
 
 
+streams in java
+---------------
 
 
 
+exception handling in java
+---------------------------
+try
+catch
+finally
+throws
+throw
 
+newer syntax of try catch does not need a finally block - try with resources - explore it
 
+custom exceptions
+checked and unchecked exceptions
 
+File Handling
+-------------
+category of IO streams
+----------------------
+	- character based streams
+		Reader
+		Writer
+	- byte based streams
+		InputStream 
+		OutputStream
 
+1. encrypt the contents of one file and store it in another file
+2. decrypt the contents of a file and print the orginal content on the console
 
-
-
-
-	
+Object serialization and deserialization
