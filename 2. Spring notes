@@ -1,0 +1,23 @@
+spring core
+	- IOC 
+	- DI
+	- 3 ways of configuration
+		- xml based
+		- annotation based
+			- @Component
+			- @Value
+			- @Autowired
+			- @Qualifier
+		- java based
+spring boot
+spring mvc
+spring rest
+spring data jpa
+global exception handling
+spring security with jwt
+
+lombok
+unit testing - JUnit with mockito
+logging
+aop (aspect oriented programming)
+
