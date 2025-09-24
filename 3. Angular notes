@@ -1,0 +1,164 @@
+Front end technology
+--------------------
+
+HTML 5
+
+CSS 3
+
+Bootstrap 5
+
+JavaScript
+
+Angular JS
+Angular 2+
+
+
+Typescript = JavaScript + (static typing + generics + interfaces + tool supports)
+
+how to install angular and start with angular project
+------------------------------------------------------ 
+1. need node js, check node version
+	node --version
+2. check npm version
+	npm --version
+3. install angular cli globally using npm
+	npm install -g @angular/cli
+4. check angular version
+	ng -- version
+5. create angular project
+	ng new ang-project-name
+
+
+To create a angular component we need files
+--------------------------------------------
+	- display.component.ts
+	- display.component.html
+	- display.compoennt.css
+	- display.spec.ts
+
+command to create angular component
+-----------------------------------
+ng generate component display
+ng g c display
+
+types of binding
+----------------
+1. One way binding
+	- string interpolation {{ }}
+	- property binding []
+	- event binding ()
+2. Two way binding
+	- using ngModel [()]
+
+To install bootstrap
+-------------------
+1. run the command
+	npm install bootstrap
+2. in styles.css file include this line
+	@import "bootstrap/dist/css/bootstrap.min.css";
+
+work with arrays
+----------------
+1. array of countries and render it as a list
+2. array of dishes object and render it as a table
+3. array of movies and render it as cards
+
+directives
+-----------
+Directives are classes that add additional behavior to elements in your Angular applications.
+	in- built directives
+	---------------------
+	component
+	attribute directives
+		ngClass
+		ngStyle
+		ngModel
+	structural directives
+		*ngFor, @for
+		*ngIf, @if
+		ngSwitch, *ngCase, *ngDefault
+
+	custom directives
+	-----------------
+		- generate directives using the command
+			ng generate directive directives/appHover
+		- use @HostListener
+		- explore @HostBinding
+
+pipes
+-----
+	in-built pipes
+	--------------
+		- string related pipes
+		- date pipe
+		- currency pipe
+		- decimal pipe
+
+	custom pipes
+	------------
+		- ng generate pipe pipes/discount
+
+	
+parent child component communication
+------------------------------------
+	- @Input() : for parent to child communication
+	- @Output() : for child to parent communication 
+
+
+angular component lifecycle
+---------------------------
+  
+
+services
+--------
+	used for
+		- centralizing a logic
+		- centralized data store
+		- connect to backend application
+
+forms
+-----
+	- template driven forms
+	- reactive forms
+	- form validation
+
+routing
+-------
+
+backend intergration using HttpClient
+-------------------------------------
+
+angular with JWT, route guards
+-------------------------------
+
+Angular with JWT
+----------------
+
+
+
+angular project folder structure
+--------------------------------
+src
+  app
+    components
+       books
+         book-list
+         book-add
+         book-edit
+         book-view
+       authors
+         author-list
+       characters
+         character-list
+    model
+       book.model.ts
+       author.model.ts
+       character.model.ts
+    services
+       book.service.ts
+       author.service.ts
+       character.service.ts
+    directives
+       appHover.directive.ts
+    pipes
+       discount.pipe.ts
