@@ -125,17 +125,41 @@ forms
 routing
 -------
 
+	- create route paths for the components in app.routes.ts
+	- use <router-outlet> in the place where the routing should happen
+	- now test the route paths by typing the route path in the browser url
+	- wild card route mapping - **
+	- redirectTo to redirect the routing
+	- child routes
+		- configure child routes for the parent routes in app.routes.ts
+		- use <router-outlet> in the parent route component
+		- create header to perform the navigation
+
+	- 2 ways of navigation
+		- use <a> 
+			 use RouterLink RouterLinkActive 
+		- programmatically navigate
+			 use Router and ActivatedRoute
+	- we can pass route parameters while routing
+
 backend intergration using HttpClient
 -------------------------------------
+  - use HttpClient
+  - import HttpClientModule
+  - add the provider
+
 
 angular with JWT, route guards
 -------------------------------
 
-Angular with JWT
-----------------
+   - 2 responsibilities for JWT in back end
+	- generate the jwt token
+	- validate the jwt token
 
-
-
+   - 2 responsibilities for JWT in front end
+	- store the jwt token 
+	- attach jwt token for subsequent request in the request header
+	
 angular project folder structure
 --------------------------------
 src
@@ -162,3 +186,19 @@ src
        appHover.directive.ts
     pipes
        discount.pipe.ts
+ 
+
+Html, CSS Assignment
+	- ul, ol
+	- table
+	- iframe
+	- a
+	- form and form elements
+
+Home
+About the Project - paragraphs
+Technology stacks used - table
+Funtionalities - list
+Screen shots - images in cards
+Contact Me - forms
+
